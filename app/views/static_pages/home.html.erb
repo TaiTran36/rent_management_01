@@ -195,36 +195,40 @@
             <div class="select">
               <div class="title"><%= t ".home_choose" %>
               </div>
+              <%= form_tag(room_path, :method => "get", id: "search_form") do %>
+                <%= text_field_tag :search, params[:search], placeholder: "Search Recipes", id: "search_text" %>
               <pre class="pre-scrollable">
                 <ul>
-                  <li><i class="glyphicon glyphicon-play"></i> <a href="#"><%= t ".home_a" %></a></li>
-                  <li><i class="glyphicon glyphicon-play"></i> <a href="#"><%= t ".home_b" %></a></li>
-                  <li><i class="glyphicon glyphicon-play"></i> <a href="#"><%= t ".home_c" %></a></li>
-                  <li><i class="glyphicon glyphicon-play"></i> <a href="#"><%= t ".home_d" %></a></li>
-                  <li><i class="glyphicon glyphicon-play"></i> <a href="#"><%= t ".home_e" %></a></li>
-                  <li><i class="glyphicon glyphicon-play"></i> <a href="#"><%= t ".home_f" %></a></li>
-                  <li><i class="glyphicon glyphicon-play"></i> <a href="#"><%= t ".home_g" %></a></li>
-                  <li><i class="glyphicon glyphicon-play"></i> <a href="#"><%= t ".home_h" %></a></li>
-                  <li><i class="glyphicon glyphicon-play"></i> <a href="#"><%= t ".home_i" %></a></li>
-                  <li><i class="glyphicon glyphicon-play"></i> <a href="#"><%= t ".home_j" %></a></li>
-                  <li><i class="glyphicon glyphicon-play"></i> <a href="#"><%= t ".home_k" %></a></li>
-                  <li><i class="glyphicon glyphicon-play"></i> <a href="#"><%= t ".home_l" %></a></li>
-                  <li><i class="glyphicon glyphicon-play"></i> <a href="#"><%= t ".home_m" %></a></li>
-                  <li><i class="glyphicon glyphicon-play"></i> <a href="#"><%= t ".home_n" %></a></li>
-                  <li><i class="glyphicon glyphicon-play"></i> <a href="#"><%= t ".home_o" %></a></li>
-                  <li><i class="glyphicon glyphicon-play"></i> <a href="#"><%= t ".home_p" %></a></li>
-                  <li><i class="glyphicon glyphicon-play"></i> <a href="#"><%= t ".home_q" %></a></li>
-                  <li><i class="glyphicon glyphicon-play"></i> <a href="#"><%= t ".home_r" %></a></li>
-                  <li><i class="glyphicon glyphicon-play"></i> <a href="#"><%= t ".home_s" %></a></li>
-                  <li><i class="glyphicon glyphicon-play"></i> <a href="#"><%= t ".home_t" %></a></li>
-                  <li><i class="glyphicon glyphicon-play"></i> <a href="#"><%= t ".home_u" %></a></li>
-                  <li><i class="glyphicon glyphicon-play"></i> <a href="#"><%= t ".home_v" %></a></li>
-                  <li><i class="glyphicon glyphicon-play"></i> <a href="#"><%= t ".home_w" %></a></li>
-                  <li><i class="glyphicon glyphicon-play"></i> <a href="#"><%= t ".home_x" %></a></li>
-                  <li><i class="glyphicon glyphicon-play"></i> <a href="#"><%= t ".home_y" %></a></li>
-                  <li><i class="glyphicon glyphicon-play"></i> <a href="#"><%= t ".home_z" %></a></li>
+                  <li class="n1" data-turbolinks="false"><i class="glyphicon glyphicon-play"></i> <a href="#"><%= t ".home_a" %></a></li>
+                  <li class="n1" data-turbolinks="false"=><i class="glyphicon glyphicon-play"></i> <a href="#"><%= t ".home_b" %></a></li>
+                  <li class="n1" data-turbolinks="false"><i class="glyphicon glyphicon-play"></i> <a href="#"><%= t ".home_c" %></a></li>
+                  <li class="n1" data-turbolinks="false"><i class="glyphicon glyphicon-play"></i> <a href="#"><%= t ".home_d" %></a></li>
+                  <li class="n1" data-turbolinks="false"><i class="glyphicon glyphicon-play"></i> <a href="#"><%= t ".home_e" %></a></li>
+                  <li class="n1" data-turbolinks="false"><i class="glyphicon glyphicon-play"></i> <a href="#"><%= t ".home_f" %></a></li>
+                  <li class="n1" data-turbolinks="false"><i class="glyphicon glyphicon-play"></i> <a href="#"><%= t ".home_g" %></a></li>
+                  <li class="n1" data-turbolinks="false"><i class="glyphicon glyphicon-play"></i> <a href="#"><%= t ".home_h" %></a></li>
+                  <li class="n1" data-turbolinks="false"><i class="glyphicon glyphicon-play"></i> <a href="#"><%= t ".home_i" %></a></li>
+                  <li class="n1" data-turbolinks="false"><i class="glyphicon glyphicon-play"></i> <a href="#"><%= t ".home_j" %></a></li>
+                  <li class="n1" data-turbolinks="false"><i class="glyphicon glyphicon-play"></i> <a href="#"><%= t ".home_k" %></a></li>
+                  <li class="n1" data-turbolinks="false"><i class="glyphicon glyphicon-play"></i> <a href="#"><%= t ".home_l" %></a></li>
+                  <li class="n1" data-turbolinks="false"><i class="glyphicon glyphicon-play"></i> <a href="#"><%= t ".home_m" %></a></li>
+                  <li class="n1" data-turbolinks="false"><i class="glyphicon glyphicon-play"></i> <a href="#"><%= t ".home_n" %></a></li>
+                  <li class="n1" data-turbolinks="false"><i class="glyphicon glyphicon-play"></i> <a href="#"><%= t ".home_o" %></a></li>
+                  <li class="n1" data-turbolinks="false"><i class="glyphicon glyphicon-play"></i> <a href="#"><%= t ".home_p" %></a></li>
+                  <li class="n1" data-turbolinks="false"><i class="glyphicon glyphicon-play"></i> <a href="#"><%= t ".home_q" %></a></li>
+                  <li class="n1" data-turbolinks="false"><i class="glyphicon glyphicon-play"></i> <a href="#"><%= t ".home_r" %></a></li>
+                  <li class="n1" data-turbolinks="false"><i class="glyphicon glyphicon-play"></i> <a href="#"><%= t ".home_s" %></a></li>
+                  <li class="n1" data-turbolinks="false"><i class="glyphicon glyphicon-play"></i> <a href="#"><%= t ".home_t" %></a></li>
+                  <li class="n1" data-turbolinks="false"><i class="glyphicon glyphicon-play"></i> <a href="#"><%= t ".home_u" %></a></li>
+                  <li class="n1" data-turbolinks="false"><i class="glyphicon glyphicon-play"></i> <a href="#"><%= t ".home_v" %></a></li>
+                  <li class="n1" data-turbolinks="false"><i class="glyphicon glyphicon-play"></i> <a href="#"><%= t ".home_w" %></a></li>
+                  <li class="n1" data-turbolinks="false"><i class="glyphicon glyphicon-play"></i> <a href="#"><%= t ".home_x" %></a></li>
+                  <li class="n1" data-turbolinks="false"><i class="glyphicon glyphicon-play"></i> <a href="#"><%= t ".home_y" %></a></li>
+                  <li class="n1" data-turbolinks="false"><i class="glyphicon glyphicon-play"></i> <a href="#"><%= t ".home_z" %></a></li>
                 </ul>
               </pre>
+              <%= submit_tag "Search", :name => nil %>
+              <% end %>
             </div>
           </div>
         </div>
