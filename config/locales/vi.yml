@@ -19,6 +19,11 @@ vi:
         x_years:
           one: "1 năm"
           other: "%{count} năm"
+  orderS:
+    show:
+      win: "PHÒNG ĐẶT THÀNH CÔNG"
+    order:
+      wins: "PHÒNG ĐÃ ĐẶT"
   layouts:
     application:
       app_title: "Chia sẻ thông tin - Tìm kiếm phòng trọ"
@@ -28,6 +33,7 @@ vi:
       head_news: "Tin tức"
       head_contact: "Liên hệ"
       head_help: "Trợ giúp "
+      head_his: "Lịch sử đặt phòng"
       sign_up: "Đăng ký"
       log_in: "Đăng nhập"
       log_out: "Đăng xuất"
@@ -250,7 +256,7 @@ vi:
       home_one: "Một"
       home_two: "Hai"
       home_three: "Ba"
-      home_hot: "Tin nóng"
+      home_hot: "Tin tức"
       home_hota: "Con gà trống đạp gà mái"
       home_hotb: "Con mèo"
       home_choose: "Chọn quận/huyện"

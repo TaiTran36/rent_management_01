@@ -412,6 +412,22 @@ body{
   margin-top: 85px;
   margin-left: 80%;
 }
+
+#home ul.nav-tabs li a{
+  width: 70px;
+  color: black;
+  padding-left:15px;
+  padding-right: 0;
+  font-size: 13px;
+}
+#Tinhot ul li {
+  margin-top: 10px;
+}
+
+#Tinhot ul li a{
+  text-decoration: none;
+  color: black;
+}
 #home .select .title{
   width: 252px;
   height: 25px;
@@ -620,7 +636,7 @@ body{
 
 #room .col-sm-8 .well{
   width: 650px;
-  height: 195px;
+  height: 210px;
   margin-left: 40px;
 }
 #room .btn span{
@@ -679,7 +695,7 @@ body{
 }
 #room .details .col-sm-8 .well{
   width: 650px;
-  height: 270px;
+  height: 300px;
   margin-left: 40px;
 }
 
@@ -689,26 +705,26 @@ body{
 }
 #room .details .contentPost{
   width: 480px;
-  height: 200px;
+  height: 230px;
   float: right;
 }
 #room .details .labelPost{
-  width: 100px;
+  width: 120px;
   float: left;
   background-color: white;
-  height: 200px;
+  height: 230px;
 }
 #room .details .labelPost label{
   margin-left: 3px;
   margin-top: 3px;
   padding-top: 4px;
-  width: 60px;
+  width: 100px;
   height: 31px;
   border-bottom: 1px solid $color_border_menu_bar;
 }
 #room .details .contentPost .list-product{
   background-color: white;
-  height: 200px;
+  height: 230px;
   overflow: hidden;
 }
 #room .details .contentPost .list-product .row{
@@ -796,6 +812,7 @@ body{
   padding-top: 20px;
   margin-left: 10px;
   word-break: keep-all;
+  
 }
 #news .posts span{
   margin-left: 10px;
@@ -1323,7 +1340,9 @@ body{
   background-color: white;
   overflow-x: hidden;
 }
-
+#admin{
+  height: 650px;
+}
 /* Style the sidenav links and the dropdown button */
 #admin .sidenav a, .dropdown-btn {
   padding: 20px 20px 6px 16px;
@@ -1343,15 +1362,23 @@ body{
 }
 #admin .header{
   position: fixed;
+  width:  100%;
 }
 /* On mouse-over */
 #admin .sidenav a:hover, .dropdown-btn:hover {
   color: #214761;
 }
+#admin .col-lg-12{
+  margin-left: 50px;
 
+}
+#admin .btn-success a{
+  text-decoration: none;
+  color: white;
+}
 /* Main content */
 #admin .main {
-  margin-left: 200px; /* Same as the width of the sidenav */
+  margin-left: 250px; /* Same as the width of the sidenav */
   font-size: 20px; /* Increased text to enable scrolling */
   padding: 0px 10px;
 }
@@ -1406,7 +1433,7 @@ margin-left: 280px;
   height: 450px;
 }
 #booked .booked_users .header_booked{
-  width: 170px;
+  width: 190px;
   height: 40px;
   margin-left: 40%;
   border-radius: 5%;
@@ -1646,6 +1673,7 @@ margin-top: 100px;
 }
 #show_cmt .list_comment label{
   margin-left: 15px;
+  margin-top: 17px;
 }
 #show_cmt .list_comment input.form-control{
   width:85%;
@@ -1674,4 +1702,26 @@ margin-top: 100px;
   width: 400px;
   word-break: keep-all;
 }
+#create_book_home .col-sm-10{
+  margin-top: 100px;
+  margin-left: 50px;
+}
 
+#create_book_home .col-sm-10 .well{
+  background-color: white;
+}
+#create_book_home label{
+  margin-top: 10px;
+}
+#create_book_room {
+  width: 700px;
+  position: absolute;
+}
+#create_book_room .col-sm-10{
+  margin-top: 100px;
+  margin-left: 50px;
+}
+#create_book_room label{
+  margin-top: 10px;
+  margin-left: 20px;
+}

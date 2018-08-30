@@ -19,6 +19,11 @@ en:
         x_years:
           one: "1 year"
           other: "%{count} yeaars"
+  orders:
+    show:
+      win: "ORDER SUCCESS"
+    order:
+      wins: "ORDER HISTORY"
   layouts:
     application:
       app_title: "Sharing information - Searching for rent house"
@@ -28,6 +33,7 @@ en:
       head_news: "News"
       head_contact: "Contact"
       head_help: "Help"
+      head_his: "Order history"
       sign_up: "Sign up"
       log_in: "Log in"
       log_out: "Log out"
@@ -251,7 +257,7 @@ en:
       home_two: "Two"
       home_three: "Three"
       home_choose: "Choose district"
-      home_hot: "Hot news"
+      home_hot: "News"
       home_hota: "The rooster kick the hen"
       home_hotb: "The cat"
       home_a: "Ba Dinh District"
