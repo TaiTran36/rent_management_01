@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get "/newbook", to: "orders#show"
   post "/newbook", to: "orders#create"
   get "home", to: "static_pages#home"
+  get '/room_district/:id', to: "rooms#room_district"
   get  "/room", to: "rooms#index"
   get  "/room/:id", to: "rooms#show"
   get "/bookroom/:id", to: "rooms#bookroom"
@@ -28,7 +29,7 @@ Rails.application.routes.draw do
     get 'orders/admin_order'
     get 'orders/owner_order'
     get 'homes/room/:id', to: "homes#room"
-   
+
     get "homes/new_room/:id", to: "homes#new_room"
     resources :homes
     post "homes/create_room",  to: "homes#create_room"

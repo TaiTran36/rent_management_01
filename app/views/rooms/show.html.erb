@@ -8,7 +8,11 @@
         <div class="row">
           <div class="col-sm-4" >
             <div class="imgPost">
-              <a href="#"><%= image_tag "imgHouse/post1.jpg" %></a>
+              <% if(room.image.thumb.url.nil?) %>
+              <%= image_tag "imgHouse/post1.jpg" %>
+              <% else %>
+              <%= image_tag room.image.thumb.url %>
+              <% end %>
             </div>
           </div>
           <div class="col-sm-8 ">
@@ -17,6 +21,7 @@
                 <%= form_for :room do |f| %>
                   <%= f.label t(".show_a") %>
                   <%= f.label t(".show_b") %>
+                  <%= f.label t(".show_f") %>
                   <%= f.label t(".show_c") %>
                   <%= f.label t(".show_d") %>
                   <%= f.label t(".show_e") %>
@@ -28,8 +33,11 @@
                     <%= @room.name%>
                   </div>
                   <div class="row">
-                    <% @home = Home.find_by id: @room.id %>
+                    <% @home = Home.find_by id: @room.home_id %>
                     <%= @home.address %>
+                  </div>
+                  <div class="row">
+                    <%= @home.district %>
                   </div>
                   <div class="row">
                     <%= @room.number_room %>
